@@ -1,0 +1,20 @@
+var ClassA = Class.create(); ClassA.prototype =
+{
+    x : null,
+
+    initialize : function(x)
+    {
+        this.x = x;
+            :
+            :  // element が <span id="hoehoe"> を参照するように設定
+            :
+        addEvent(element, "click", this.clickHandler); // element の onclick に this.clickHandler() を登録
+    },
+
+    clickHandler : function()
+    {
+        alert(this.x);
+    }
+};
+
+var a = new ClassA(10);
