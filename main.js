@@ -1,6 +1,3 @@
-// 戻る、進むしたときに手番かわるし、COMが打ってくれない
-// pass判定のときに勝手に打てる手番にかわって、comがうっちゃう
-
 class BOARD {
     constructor(){
         this.createSq();
